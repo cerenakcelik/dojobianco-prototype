@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Embodied Presence — Dojo Bianco</title>
+<link rel="stylesheet" href="style.css" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+<body>
+
+  <div class="nav">
+    <div class="header-bar">
+      <a class="back" href="index.html#learn">← Learn</a>
+      <a href="lesson-grounding.html">← Grounding</a>
+      <a href="lesson-chakras.html">Next: Chakras →</a>
+    </div>
+  </div>
+
+  <div class="section">
+    <img src="logo.png" alt="Dojo Bianco Logo" class="logo" />
+    <h1>Embodied Presence — Returning to the Living Body</h1>
+    <p class="muted">Mind–body connection and emotional attunement.</p>
+
+    <div class="card silhouette">
+      <p>Presence is not achieved by effort; it emerges when the mind relaxes into the body’s truth. We practice coming home to sensation, emotion, and breath — as they are — without forcing change. This is the ground of honest contact.</p>
+    </div>
+
+    <div class="card">
+      <strong>Self-assessment</strong>
+      <ul class="muted">
+        <li><em>Mind–body</em>: Thoughts / Moving between / With sensation</li>
+        <li><em>Emotion</em>: Clear / Muted / Overwhelmed</li>
+        <li><em>Contact</em>: Narrow / Balanced / Wide (add one anchor)</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <strong>Practice (5 minutes)</strong>
+      <ol class="muted">
+        <li>Sense map: 3 sensations (pressure, temperature, movement).</li>
+        <li>Emotion check: joy, sadness, fear, anger, calm, not sure.</li>
+        <li>Breath bridge: let feeling be held by breath, not mind.</li>
+        <li>Include one external sound and the support beneath you.</li>
+      </ol>
+    </div>
+
+    <div class="card">
+      <blockquote class="muted">“Presence is not achieved. It is remembered — each time we meet ourselves in honesty.” — Dojo Bianco Teaching</blockquote>
+    </div>
+
+    <div class="cta-row" style="margin-top:18px;">
+      <a class="btn" href="index.html#learn">← Back to Learn</a>
+      <a class="btn primary" href="lesson-chakras.html">Continue → Chakras & Energy</a>
+    </div>
+  </div>
+
+  <div class="section footer">© Dojo Bianco</div>
+</body>
+</html>
