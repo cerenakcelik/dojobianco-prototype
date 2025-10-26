@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Dojo Bianco — App 2.0 (Scroll Prototype v2)</title>
+<style>
+  :root { --sand:#F6F2EC; --stone:#2A2A28; --accent:#756D5A; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--sand); color:var(--stone); font-family: ui-serif, Georgia, serif; }
+  .section { padding: 28px 18px; max-width: 520px; margin: 0 auto; }
+  .logo { width: 140px; display:block; margin: 8px auto; }
+  h1, h2 { margin: 10px 0 6px; }
+  .tagline { text-align:center; opacity:0.85; }
+  .card { background:#fff; border:1px solid #e6e0d8; border-radius:18px; padding:16px; margin:12px 0; }
+  .btn { display:inline-block; padding: 12px 18px; border-radius:14px; border:1px solid #d7d2c9; text-decoration:none; color: var(--stone); background:#fff; }
+  .primary { background:var(--accent); color:#fff; border-color:var(--accent); }
+  .muted { color:#6e6b66; }
+  .tiles { display:grid; gap:12px; }
+  .tile { background:#fff; border:1px solid #e6e0d8; border-radius:18px; padding:16px; }
+  .small { font-size:12px; opacity:.7; }
+  .nav { position:sticky; top:0; background:linear-gradient(var(--sand), var(--sand)); padding:10px 18px; border-bottom:1px solid #e7e0d7; z-index:10; }
+  .nav a { margin-right:10px; text-decoration:none; color:var(--stone); }
+  .footer { text-align:center; padding:22px; opacity:.6; }
+</style>
+</head>
+<body>
+  <div class="nav">
+    <a href="#home">Home</a>
+    <a href="#public">Learn</a>
+    <a href="#login">Login</a>
+    <a href="#dashboard">My Journey</a>
+    <a href="#booking">Book</a>
+    <a href="#about">About</a>
+  </div>
+
+  <div id="home" class="section">
+    <h1 style="text-align:center;">Dojo Bianco</h1>
+    <p class="tagline">A sanctuary for healing and becoming.</p>
+    <p class="muted" style="text-align:center;">Tap “Explore Practices” below, or use the sticky nav to jump around.</p>
+    <div style="text-align:center; margin-top:12px;">
+      <a class="btn primary" href="#public">Explore Practices</a>
+      <a class="btn" href="#login">Log in</a>
+    </div>
+  </div>
+
+  <div id="public" class="section">
+    <h2>Learn (Public)</h2>
+    <div class="tiles">
+      <div class="tile">
+        <strong>Grounding — Meeting the Earth Within</strong>
+        <p class="muted">A gentle Dojo Bianco introduction to breath, weight, and the support beneath you.</p>
+        <a class="btn" href="#lesson_public">Read Lesson</a>
+      </div>
+      <div class="tile">
+        <strong>Embodied Presence — Returning to the Living Body</strong>
+        <p class="muted">Simple scan to return to your body and soften reactivity.</p>
+        <a class="btn" href="#lesson_presence">Read Lesson</a>
+      </div>
+      <div class="tile">
+        <strong>Chakras & Energy — A Calm Introduction</strong>
+        <p class="muted">Seven centers through a grounded, luminous lens.</p>
+        <a class="btn" href="#lesson_chakras">Read Lesson</a>
+      </div>
+      <div class="tile">
+        <strong>Defense Mechanisms — Meeting Our Protectors with Compassion</strong>
+        <p class="muted">From patterns to gifts — a Dojo Bianco path.</p>
+        <a class="btn" href="#defenses">Open</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="lesson_public" class="section">
+    <h2>Grounding — Meeting the Earth Within</h2>
+    <div class="card"><p class="muted">At Dojo Bianco, grounding isn’t a technique—it’s a meeting... (full lesson text goes here in the real app).</p></div>
+  </div>
+
+  <div id="lesson_presence" class="section">
+    <h2>Embodied Presence — Returning to the Living Body</h2>
+    <div class="card"><p class="muted">Presence emerges when mind relaxes into the body’s truth... (lesson placeholder).</p></div>
+  </div>
+
+  <div id="lesson_chakras" class="section">
+    <h2>Chakras & Energy — A Calm Introduction</h2>
+    <div class="card"><p class="muted">The human energy field is the bridge between consciousness and matter... (lesson placeholder + luminous diagram in real app).</p></div>
+  </div>
+
+  <div id="defenses" class="section">
+    <h2>Defense Mechanisms — Meeting Our Protectors with Compassion</h2>
+    <div class="card">
+      <h3>From the Leaving Pattern to Creative Pleasure</h3>
+      <p class="muted">Wound, defenses, patterns, blocks to joy, tasks, higher gifts, healing responses, and the 4D path to Joy... (expanded narrative goes here).</p>
+    </div>
+  </div>
+
+  <div id="login" class="section">
+    <h2>Log in / Sign up</h2>
+    <div class="card"><p class="muted">Auth screen goes here in the real app.</p></div>
+  </div>
+
+  <div id="dashboard" class="section">
+    <h2>Dashboard</h2>
+    <div class="card"><p class="muted">Next module, progress, book a session.</p></div>
+  </div>
+
+  <div id="booking" class="section">
+    <h2>Book a Session</h2>
+    <div class="card"><a class="btn primary" href="https://www.cerenakcelikbrunini.com/appointment" target="_blank">Open Booking</a></div>
+  </div>
+
+  <div id="about" class="section">
+    <h2>About Us</h2>
+    <div class="card"><p class="muted">Dojo Bianco is a sanctuary for healing and becoming in Tuscany...</p></div>
+  </div>
+
+  <div class="footer">© Dojo Bianco</div>
+</body>
+</html>
