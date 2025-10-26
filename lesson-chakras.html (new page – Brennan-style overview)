@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Chakras & Energy — Dojo Bianco</title>
+<link rel="stylesheet" href="style.css" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+<body>
+
+  <div class="nav">
+    <div class="header-bar">
+      <a class="back" href="index.html#learn">← Learn</a>
+      <a href="lesson-presence.html">← Presence</a>
+      <a href="defenses.html">Next: Defenses →</a>
+    </div>
+  </div>
+
+  <div class="section">
+    <img src="logo.png" alt="Dojo Bianco Logo" class="logo" />
+    <h1>Chakras & Energy — A Calm Introduction</h1>
+    <p class="muted">Brennan-inspired: chakras as transformers between body and subtle fields — practical, experiential, grounded.</p>
+
+    <div class="card silhouette">
+      <p>The human energy field is the bridge between consciousness and matter. Chakras organize how life moves through you as warmth, vibration, expansion, and meaning.</p>
+    </div>
+
+    <div class="card">
+      <strong>Seven Centers</strong>
+      <ul class="muted">
+        <li><b>Root</b> — safety & belonging · feel soles and base of spine.</li>
+        <li><b>Sacral</b> — flow & pleasure · belly breath, gentle pelvis mobility.</li>
+        <li><b>Solar Plexus</b> — will & clarity · warmth around navel/ribs.</li>
+        <li><b>Heart</b> — love & balance · breathe behind the sternum.</li>
+        <li><b>Throat</b> — truth & expression · hum softly; relax jaw.</li>
+        <li><b>Brow</b> — insight & perspective · space behind eyes.</li>
+        <li><b>Crown</b> — connection & meaning · awareness up, return to heart.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <strong>Practice — Vertical Alignment (7 min)</strong>
+      <p class="muted">Sense a central column of light (hara). Breathe crown → root; exhale through the feet. Let each center harmonize. Rest awareness at the heart.</p>
+    </div>
+
+    <div class="card">
+      <blockquote class="muted">“Energy flows where honesty meets awareness.” — Dojo Bianco Teaching</blockquote>
+    </div>
+
+    <div class="cta-row" style="margin-top:18px;">
+      <a class="btn" href="index.html#learn">← Back to Learn</a>
+      <a class="btn primary" href="defenses.html">Continue → Defenses</a>
+    </div>
+  </div>
+
+  <div class="section footer">© Dojo Bianco</div>
+</body>
+</html>
