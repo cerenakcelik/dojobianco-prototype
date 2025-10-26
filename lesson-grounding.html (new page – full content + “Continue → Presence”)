@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Grounding — Dojo Bianco</title>
+<link rel="stylesheet" href="style.css" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+<body>
+
+  <div class="nav">
+    <div class="header-bar">
+      <a class="back" href="index.html">← Home</a>
+      <a href="index.html#learn">Learn</a>
+      <a href="lesson-presence.html">Next: Presence →</a>
+    </div>
+  </div>
+
+  <div class="section">
+    <img src="logo.png" alt="Dojo Bianco Logo" class="logo" />
+    <h1>Grounding — Meeting the Earth Within</h1>
+    <p class="muted">A gentle Dojo Bianco introduction to breath, weight, and the support beneath you.</p>
+
+    <div class="card silhouette">
+      <p>At Dojo Bianco, grounding isn’t a technique — it’s a meeting. Imagine the cool stone beneath your feet, olive branches moving in a slow breeze, and your breath arriving without effort. We’re simply remembering that the body knows how to be here.</p>
+    </div>
+
+    <div class="card">
+      <strong>How to begin</strong>
+      <p class="muted">Stand or sit comfortably. Let your shoulders drop 2 millimeters. Feel the gentle weight of your body moving downwards. Inhale softly through the nose. Exhale a little longer than you inhale. Three minutes is enough.</p>
+    </div>
+
+    <h3>Self-assessment (before practice)</h3>
+    <div class="card">
+      <strong>1) Body connection right now</strong>
+      <p class="small">Choose the phrase that feels closest.</p>
+      <ul class="muted">
+        <li><em>Very connected</em> — Beautiful. Stay close to sensation; widen your field rather than “doing more.”</li>
+        <li><em>Somewhat connected</em> — Good. Today is about consistency over intensity.</li>
+        <li><em>Disconnected</em> — Welcome. Nothing to fix. Let gravity do the first step.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <strong>2) Breath pattern</strong>
+      <p class="small">What describes your breath?</p>
+      <ul class="muted">
+        <li><em>Slow & steady</em> — Keep the exhale softer and slightly longer; no forcing.</li>
+        <li><em>Shallow / chest</em> — Invite breath to the back ribs; imagine space behind the heart.</li>
+        <li><em>Held / irregular</em> — Start with three sighs out of the mouth; then return to the nose.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <strong>3) Anchor awareness</strong>
+      <p class="small">Where do you feel most anchored?</p>
+      <ul class="muted">
+        <li><em>Feet / legs</em> — Excellent. Let the pelvis get 1% heavier.</li>
+        <li><em>Pelvis / belly</em> — Good. Let the jaw soften; tongue rests on the floor of the mouth.</li>
+        <li><em>Head / thoughts</em> — Perfect place to start. Bring attention down to the soles; feel temperature + pressure.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <strong>Practice (3 minutes)</strong>
+      <ol class="muted">
+        <li>Feel the contact: soles ↔ stone / earth.</li>
+        <li>Inhale softly. Exhale slightly longer. Let shoulders and belly receive gravity.</li>
+        <li>Notice one detail around you (light on wall, a distant sound). Let it slow you.</li>
+      </ol>
+    </div>
+
+    <div class="card">
+      <strong>Reflection</strong>
+      <ul class="muted">
+        <li>What felt more available — breath, weight, or space?</li>
+        <li>Where did your body say “yes” to grounding?</li>
+        <li>One sentence you want to remember for later.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <strong>Overall insight</strong>
+      <p class="muted">Grounding is not about being heavy — it’s about being related. Today’s meeting with the earth is enough. Tomorrow, we meet again.</p>
+    </div>
+
+    <div class="cta-row" style="margin-top:18px;">
+      <a class="btn" href="index.html#learn">← Back to Learn</a>
+      <a class="btn primary" href="lesson-presence.html">Continue → Embodied Presence</a>
+    </div>
+  </div>
+
+  <div class="section footer">© Dojo Bianco</div>
+</body>
+</html>
