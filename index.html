@@ -5,15 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <title>Dojo Bianco — Healing & Wellbeing Hub</title>
 <meta name="description" content="Dojo Bianco: A sanctuary for healing and becoming. Public practices + client portal."/>
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
 <style>
   :root{
-    --sand:#F6F2EC;
-    --stone:#2A2A28;
-    --accent:#756D5A;
-    --muted:#6e6b66;
-    --line:#e6e0d8;
+    --sand:#F6F2EC; --stone:#2A2A28; --accent:#756D5A;
+    --muted:#6e6b66; --line:#e6e0d8; --card:#ffffff;
   }
   *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html{scroll-behavior:smooth}
   body{margin:0;background:var(--sand);color:var(--stone);font-family: ui-serif, Georgia, 'Times New Roman', Times, serif}
   .nav{position:sticky;top:0;background:var(--sand);padding:10px 18px;border-bottom:1px solid #e7e0d7;z-index:10}
   .nav a{margin-right:10px;text-decoration:none;color:var(--stone)}
@@ -25,19 +24,28 @@
   .small{font-size:12px;opacity:.7}
   .btn{display:inline-block;padding:12px 18px;border-radius:14px;border:1px solid #d7d2c9;background:#fff;text-decoration:none;color:var(--stone)}
   .primary{background:var(--accent);color:#fff;border-color:var(--accent)}
-  .card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px;margin:12px 0}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;margin:12px 0}
   .tiles{display:grid;gap:12px}
   .tile{background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px}
   .divider{height:1px;background:linear-gradient(90deg,transparent,#fff,transparent);opacity:.8;margin:14px 0}
-  /* Light body silhouette */
-  .silhouette{
-    position:relative;padding-left:16px;
-  }
+  /* Light body silhouette line on expanded sections */
+  .silhouette{position:relative;padding-left:16px}
   .silhouette:before{
     content:"";position:absolute;left:0;top:0;bottom:0;width:2px;
     background:linear-gradient(180deg,rgba(255,255,255,.0),rgba(255,255,255,.9),rgba(255,255,255,.0));
-    border-radius:2px;box-shadow:0 0 8px rgba(255,255,255,.6);
+    border-radius:2px;box-shadow:0 0 8px rgba(255,255,255,.6)
   }
+  /* Collapsible sections */
+  details{border:1px solid var(--line);border-radius:18px;background:#fff;margin:12px 0}
+  summary{list-style:none;cursor:pointer;padding:16px 18px;border-radius:18px;display:flex;justify-content:space-between;align-items:center}
+  summary::-webkit-details-marker{display:none}
+  .sum-title{font-weight:600}
+  .chev{transition:transform .2s ease}
+  details[open] .chev{transform:rotate(90deg)}
+  .panel{padding:0 18px 18px}
+  /* Collapsible sub-cards inside defenses */
+  .sub details{margin:8px 0;border-radius:14px}
+  .sub summary{padding:12px 14px}
   .footer{text-align:center;padding:22px;opacity:.6}
 </style>
 </head>
@@ -46,9 +54,8 @@
   <!-- Top navigation -->
   <div class="nav">
     <a href="#home">Home</a>
-    <a href="#public">Learn</a>
+    <a href="#learn">Learn</a>
     <a href="#login">Login</a>
-    <a href="#dashboard">My Journey</a>
     <a href="#booking">Book</a>
     <a href="#about">About</a>
   </div>
@@ -58,298 +65,219 @@
     <img src="logo.png" alt="Dojo Bianco Logo" class="logo" />
     <h1 style="text-align:center;">Dojo Bianco</h1>
     <p class="tagline">A sanctuary for healing and becoming.</p>
-    <p class="muted" style="text-align:center;">Explore a gentle taste of grounding, presence, and energy awareness — or log in to continue your journey.</p>
+    <p class="muted" style="text-align:center;">Tap a tile below to open just that teaching. Everything is calm and focused.</p>
     <div style="text-align:center;margin-top:12px;">
-      <a class="btn primary" href="#public">Explore Practices</a>
+      <a class="btn primary" href="#learn">Explore Practices</a>
       <a class="btn" href="#login">Log in</a>
     </div>
   </div>
 
-  <!-- Public Learn hub -->
-  <div id="public" class="section">
+  <!-- Public Learn hub (tiles) -->
+  <div id="learn" class="section">
     <h2>Learn (Public)</h2>
     <div class="tiles">
-      <div class="tile">
-        <strong>Grounding — Meeting the Earth Within</strong>
-        <p class="muted">A gentle Dojo Bianco introduction to breath, weight, and the support beneath you.</p>
-        <a class="btn" href="#lesson_grounding">Read Lesson</a>
+      <a href="#g-sec" class="tile" style="text-decoration:none;color:inherit;">
+        <div class="sum-title">Grounding — Meeting the Earth Within</div>
+        <p class="muted small">A gentle Dojo Bianco introduction to breath, weight, and the support beneath you.</p>
+      </a>
+      <a href="#p-sec" class="tile" style="text-decoration:none;color:inherit;">
+        <div class="sum-title">Embodied Presence — Returning to the Living Body</div>
+        <p class="muted small">Mind–body connection and emotional attunement.</p>
+      </a>
+      <a href="#c-sec" class="tile" style="text-decoration:none;color:inherit;">
+        <div class="sum-title">Chakras & Energy — A Calm Introduction</div>
+        <p class="muted small">Seven centers through a grounded Brennan-inspired lens.</p>
+      </a>
+      <a href="#d-sec" class="tile" style="text-decoration:none;color:inherit;">
+        <div class="sum-title">Defense Mechanisms — Meeting Our Protectors</div>
+        <p class="muted small">From patterns to gifts — the Dojo Bianco path.</p>
+      </a>
+    </div>
+  </div>
+
+  <!-- COLLAPSIBLE SECTIONS -->
+
+  <!-- Grounding -->
+  <div id="g-sec" class="section">
+    <details>
+      <summary><span class="sum-title">Grounding — Meeting the Earth Within</span><span class="chev">›</span></summary>
+      <div class="panel silhouette">
+        <div class="card">
+          <p>At Dojo Bianco, grounding isn’t a technique — it’s a meeting. Imagine the cool stone beneath your feet, olive branches moving in a slow breeze, and your breath arriving without effort. We’re simply remembering that the body knows how to be here.</p>
+        </div>
+        <div class="card">
+          <strong>How to begin</strong>
+          <p class="muted">Stand or sit comfortably. Let your shoulders drop 2 millimeters. Feel the gentle weight of your body moving downwards. Inhale softly through the nose. Exhale a little longer than you inhale. Three minutes is enough.</p>
+        </div>
+        <div class="card">
+          <strong>Self-assessment</strong>
+          <ul class="muted">
+            <li><em>Very connected</em> — widen awareness without doing more.</li>
+            <li><em>Somewhat connected</em> — consistency over intensity.</li>
+            <li><em>Disconnected</em> — welcome; let gravity lead.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <strong>Practice (3 min)</strong>
+          <ol class="muted">
+            <li>Feel contact: soles ↔ stone / earth.</li>
+            <li>Exhale slightly longer; let shoulders and belly receive gravity.</li>
+            <li>Notice one detail (light, sound). Let it slow you.</li>
+          </ol>
+        </div>
+        <div class="card">
+          <strong>Reflection</strong>
+          <ul class="muted">
+            <li>What felt more available — breath, weight, or space?</li>
+            <li>Where did your body say “yes” to grounding?</li>
+            <li>One sentence to remember.</li>
+          </ul>
+        </div>
       </div>
-      <div class="tile">
-        <strong>Embodied Presence — Returning to the Living Body</strong>
-        <p class="muted">Mind–body connection and emotional attunement.</p>
-        <a class="btn" href="#lesson_presence">Read Lesson</a>
+    </details>
+  </div>
+
+  <!-- Embodied Presence -->
+  <div id="p-sec" class="section">
+    <details>
+      <summary><span class="sum-title">Embodied Presence — Returning to the Living Body</span><span class="chev">›</span></summary>
+      <div class="panel silhouette">
+        <div class="card">
+          <p>Presence is not achieved by effort; it emerges when the mind relaxes into the body’s truth. We practice coming home to sensation, emotion, and breath — as they are — without forcing change. This is the ground of honest contact.</p>
+        </div>
+        <div class="card">
+          <strong>Self-assessment</strong>
+          <ul class="muted">
+            <li><em>Mind–body</em>: Thoughts / Moving between / With sensation</li>
+            <li><em>Emotion</em>: Clear / Muted / Overwhelmed</li>
+            <li><em>Contact</em>: Narrow / Balanced / Wide (add one anchor)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <strong>Practice (5 min)</strong>
+          <ol class="muted">
+            <li>Sense map: 3 sensations (pressure, temperature, movement).</li>
+            <li>Emotion check: joy, sadness, fear, anger, calm, not sure.</li>
+            <li>Breath bridge: let feeling be held by breath, not mind.</li>
+            <li>Include one external sound and the support beneath you.</li>
+          </ol>
+        </div>
+        <div class="card">
+          <blockquote class="muted">“Presence is not achieved. It is remembered — each time we meet ourselves in honesty.” — Dojo Bianco Teaching</blockquote>
+        </div>
       </div>
-      <div class="tile">
-        <strong>Chakras & Energy — A Calm Introduction</strong>
-        <p class="muted">Seven centers through a grounded Brennan-inspired lens.</p>
-        <a class="btn" href="#lesson_chakras">Read Lesson</a>
+    </details>
+  </div>
+
+  <!-- Chakras -->
+  <div id="c-sec" class="section">
+    <details>
+      <summary><span class="sum-title">Chakras & Energy — A Calm Introduction</span><span class="chev">›</span></summary>
+      <div class="panel silhouette">
+        <div class="card">
+          <p>The human energy field is the bridge between consciousness and matter. In this Brennan-inspired overview, chakras are understood as transformers between body and subtle fields — practical, experiential, and grounded.</p>
+        </div>
+        <div class="card">
+          <strong>Seven Centers (brief)</strong>
+          <ul class="muted">
+            <li><b>Root</b> — safety & belonging · feel soles and base of spine.</li>
+            <li><b>Sacral</b> — flow & pleasure · belly breath, gentle pelvis.</li>
+            <li><b>Solar Plexus</b> — will & clarity · warmth around navel/ribs.</li>
+            <li><b>Heart</b> — love & balance · breathe behind the sternum.</li>
+            <li><b>Throat</b> — truth & expression · hum softly; relax jaw.</li>
+            <li><b>Brow</b> — insight & perspective · space behind eyes.</li>
+            <li><b>Crown</b> — connection & meaning · awareness up, return to heart.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <strong>Practice — Vertical Alignment (7 min)</strong>
+          <p class="muted">Sense a central column of light (hara). Breathe crown → root; exhale through the feet. Let each center harmonize. Rest awareness at the heart.</p>
+        </div>
+        <div class="card">
+          <blockquote class="muted">“Energy flows where honesty meets awareness.” — Dojo Bianco Teaching</blockquote>
+        </div>
       </div>
-      <div class="tile">
-        <strong>Defense Mechanisms — Meeting Our Protectors with Compassion</strong>
-        <p class="muted">From patterns to gifts — the Dojo Bianco path.</p>
-        <a class="btn" href="#defenses">Open</a>
+    </details>
+  </div>
+
+  <!-- Defenses overview + Leaving expanded -->
+  <div id="d-sec" class="section">
+    <details open>
+      <summary><span class="sum-title">Defense Mechanisms — Meeting Our Protectors with Compassion</span><span class="chev">›</span></summary>
+      <div class="panel">
+        <div class="tile"><strong>From the Leaving Pattern to Creative Pleasure</strong> — tap to read below.</div>
+        <div class="tile"><strong>From the Merging Pattern to Self-Reliance (Oral)</strong></div>
+        <div class="tile"><strong>From the Enduring Pattern to Freedom (Masochist)</strong></div>
+        <div class="tile"><strong>From the Aggressive Pattern to Vulnerability & One’s Goodness (Psychopathic)</strong></div>
+        <div class="tile"><strong>From the Appropriate Overachiever to Authenticity & Trust (Rigid)</strong></div>
+
+        <!-- Leaving Pattern Expanded (sub-collapsibles) -->
+        <div class="sub silhouette">
+          <details open><summary><b>From the Leaving Pattern to Creative Pleasure</b></summary>
+            <div class="panel">
+              <div class="card"><em class="muted">When the first contact with life feels unsafe, the spirit learns to hover near the doorway.</em></div>
+              <div class="card"><b>Wound</b><p class="muted">Shattered attention of the incoming spirit; hostility in-utero to 6 months. Fear of embodiment and annihilation — “my life force threatens my life.”</p></div>
+              <div class="card"><b>Main Issues</b><p class="muted">Insufficient grounding, fragile attachment, chronic fear of existence, split between thought and sensation.</p></div>
+              <div class="card"><b>Defenses</b><p class="muted">Denial, projection, escape, withdrawal, mental defense, limited contact, avoidance of feeling, freeze, dissociation.</p></div>
+              <div class="card"><b>Patterns</b><p class="muted">Hypervigilance; leaves at first sign of trouble; seeks safety in solitude/nature; over-sensitive to others’ energy; self-harm; rage; anxiety.</p></div>
+              <div class="card"><b>Blocks to Joy</b><p class="muted">Inner critic/self-hatred; weak energetic boundaries; energy shifts upward to head (read as fear); overwhelm and confusion that block joy.</p></div>
+              <div class="card"><b>Tasks & Real Needs</b><p class="muted">Safety and belonging in a chosen tribe; come fully into the body; individuate; integrate life experience.</p></div>
+              <div class="card"><b>Higher Gifts</b><p class="muted">Expanded psychic perception; visionary thinking; powerful creativity when grounded — inventors, artists, musicians.</p></div>
+              <div class="card"><b>Healing Responses</b><p class="muted">Light, agenda-free touch; first connect through rational mind; add playfulness, movement, dance, music, grounding, mind-body therapy and anger work.</p></div>
+              <div class="card"><b>Path through the 4 D’s to Joy</b>
+                <ol class="muted">
+                  <li><b>Hara</b> — align intention to remember safety & belonging.</li>
+                  <li><b>Core</b> — embody spiritual aspects in the physical world.</li>
+                  <li><b>Auric</b> — gently dissolve the superego/inner critic; install supportive adult ego.</li>
+                  <li><b>Expansion</b> — return to the creative life pulse (Joy).</li>
+                </ol>
+              </div>
+              <div class="card"><blockquote class="muted">“I am safe to create in this body.” — Dojo Bianco Teaching</blockquote></div>
+            </div>
+          </details>
+        </div>
       </div>
-    </div>
-  </div>
-
-  <!-- Lesson 1: Grounding -->
-  <div id="lesson_grounding" class="section silhouette">
-    <h2>Grounding — Meeting the Earth Within</h2>
-
-    <div class="card">
-      <p>At Dojo Bianco, grounding isn’t a technique — it’s a meeting. Imagine the cool stone beneath your feet, olive branches moving in a slow breeze, and your breath arriving without effort. We’re simply remembering that the body knows how to be here.</p>
-    </div>
-
-    <div class="card">
-      <strong>How to begin</strong>
-      <p class="muted">Stand or sit comfortably. Let your shoulders drop 2 millimeters. Feel the gentle weight of your body moving downwards. Inhale softly through the nose. Exhale a little longer than you inhale. Three minutes is enough.</p>
-    </div>
-
-    <h3>Self-assessment (before practice)</h3>
-    <div class="card">
-      <strong>1) Body connection right now</strong>
-      <p class="small">Choose the phrase that feels closest.</p>
-      <ul class="muted">
-        <li><em>Very connected</em> — Beautiful. Stay close to sensation; widen your field rather than “doing more.”</li>
-        <li><em>Somewhat connected</em> — Good. Today is about consistency over intensity.</li>
-        <li><em>Disconnected</em> — Welcome. Nothing to fix. Let gravity do the first step.</li>
-      </ul>
-    </div>
-    <div class="card">
-      <strong>2) Breath pattern</strong>
-      <p class="small">What describes your breath?</p>
-      <ul class="muted">
-        <li><em>Slow & steady</em> — Keep the exhale softer and slightly longer; no forcing.</li>
-        <li><em>Shallow / in the chest</em> — Invite breath to the back ribs; imagine space behind the heart.</li>
-        <li><em>Held / irregular</em> — Begin with three sighs out of the mouth; then return to the nose.</li>
-      </ul>
-    </div>
-    <div class="card">
-      <strong>3) Anchor awareness</strong>
-      <p class="small">Where do you feel most anchored?</p>
-      <ul class="muted">
-        <li><em>Feet / legs</em> — Excellent. Let the pelvis get 1% heavier.</li>
-        <li><em>Pelvis / belly</em> — Good. Let the jaw soften; tongue rests on the floor of the mouth.</li>
-        <li><em>Head / thoughts</em> — Perfect place to start. Bring attention down to the soles; feel temperature + pressure.</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <strong>Practice (3 minutes)</strong>
-      <ol class="muted">
-        <li>Feel the contact: soles ↔ stone / earth.</li>
-        <li>Inhale softly. Exhale slightly longer. Let shoulders and belly receive gravity.</li>
-        <li>Notice one detail around you (light on wall, a distant sound). Let it slow you.</li>
-      </ol>
-    </div>
-
-    <div class="card">
-      <strong>Reflection</strong>
-      <ul class="muted">
-        <li>What felt more available — breath, weight, or space?</li>
-        <li>Where did your body say “yes” to grounding?</li>
-        <li>One sentence you want to remember for later.</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <strong>Overall insight</strong>
-      <p class="muted">Grounding is not about being heavy — it’s about being related. Today’s meeting with the earth is enough. Tomorrow, we meet again.</p>
-    </div>
-  </div>
-
-  <!-- Divider -->
-  <div class="section"><div class="divider"></div></div>
-
-  <!-- Lesson 2: Embodied Presence -->
-  <div id="lesson_presence" class="section silhouette">
-    <h2>Embodied Presence — Returning to the Living Body</h2>
-
-    <div class="card">
-      <p>Presence is not achieved by effort; it emerges when the mind relaxes into the body’s truth. In Embodied Presence we practice coming home to sensation, emotion, and breath — as they are — without forcing a change. This is the ground of honest contact with ourselves and with others.</p>
-    </div>
-
-    <div class="card">
-      <strong>Self-assessment</strong>
-      <ul class="muted">
-        <li><em>Mind–body connection</em>: Mostly in thoughts / Moving between / Present with sensation.</li>
-        <li><em>Emotional awareness</em>: Clear / Muted / Overwhelmed.</li>
-        <li><em>Contact with environment</em>: Narrow / Balanced / Wide (add one anchor).</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <strong>Practice (5 minutes)</strong>
-      <ol class="muted">
-        <li>Sense map: name three sensations (pressure, temperature, movement).</li>
-        <li>Emotion check: which feeling is closest — joy, sadness, fear, anger, calm, or not sure?</li>
-        <li>Breath bridge: on the exhale, let the feeling be held by the breath rather than the mind.</li>
-        <li>Contact: include one external sound and the support beneath you.</li>
-      </ol>
-    </div>
-
-    <div class="card">
-      <blockquote class="muted">“Presence is not achieved. It is remembered — each time we meet ourselves in honesty.” — Dojo Bianco Teaching</blockquote>
-    </div>
-  </div>
-
-  <!-- Divider -->
-  <div class="section"><div class="divider"></div></div>
-
-  <!-- Lesson 3: Chakras & Energy -->
-  <div id="lesson_chakras" class="section silhouette">
-    <h2>Chakras & Energy — A Calm Introduction</h2>
-
-    <div class="card">
-      <p>The human energy field is the bridge between consciousness and matter. In this Brennan-inspired overview, chakras are understood as transformers of energy between body and subtle fields — practical, experiential, and grounded.</p>
-    </div>
-
-    <div class="card">
-      <strong>Seven Centers (brief)</strong>
-      <ul class="muted">
-        <li><b>Root</b> — safety & belonging · Practice: feel soles and base of spine.</li>
-        <li><b>Sacral</b> — flow & pleasure · Practice: belly breath, gentle pelvis mobility.</li>
-        <li><b>Solar Plexus</b> — will & clarity · Practice: warmth around navel and ribs.</li>
-        <li><b>Heart</b> — love & balance · Practice: breathe behind the sternum.</li>
-        <li><b>Throat</b> — truth & expression · Practice: hum softly; relax jaw.</li>
-        <li><b>Brow</b> — insight & perspective · Practice: space behind eyes.</li>
-        <li><b>Crown</b> — connection & meaning · Practice: awareness up, return to heart.</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <strong>Self-assessment</strong>
-      <ul class="muted">
-        <li>Which center feels most alive today?</li>
-        <li>Where do you notice tightness or numbness?</li>
-        <li>Where is breath most available?</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <strong>Practice — Vertical Alignment (7 min)</strong>
-      <p class="muted">Sense a central column of light (hara). Breathe crown → root; exhale through the feet. Let each center harmonize. End by resting awareness at the heart.</p>
-    </div>
-
-    <div class="card">
-      <blockquote class="muted">“Energy flows where honesty meets awareness.” — Dojo Bianco Teaching</blockquote>
-    </div>
-  </div>
-
-  <!-- Divider -->
-  <div class="section"><div class="divider"></div></div>
-
-  <!-- Defenses: landing + first expanded chapter -->
-  <div id="defenses" class="section">
-    <h2>Defense Mechanisms — Meeting Our Protectors with Compassion</h2>
-
-    <div class="tile">
-      <strong>From the Leaving Pattern to Creative Pleasure</strong>
-      <p class="muted">A pre-language adaptation: when early life feels unsafe, the spirit learns to hover. The path back is gentle — to arrive in the body and create.</p>
-      <a class="btn" href="#leaving">Open Chapter</a>
-    </div>
-    <div class="tile"><strong>From the Merging Pattern to Self-Reliance (Oral)</strong></div>
-    <div class="tile"><strong>From the Enduring Pattern to Freedom (Masochist)</strong></div>
-    <div class="tile"><strong>From the Aggressive Pattern to Vulnerability & One’s Goodness (Psychopathic)</strong></div>
-    <div class="tile"><strong>From the Appropriate Overachiever to Authenticity & Trust (Rigid)</strong></div>
-  </div>
-
-  <!-- Leaving Pattern: Expanded -->
-  <div id="leaving" class="section silhouette">
-    <h2>From the Leaving Pattern to Creative Pleasure</h2>
-
-    <div class="card"><em class="muted">When the first contact with life feels unsafe, the spirit learns to hover near the doorway.</em></div>
-
-    <div class="card">
-      <strong>Wound</strong>
-      <p class="muted">Shattered attention of the incoming spirit; hostility in-utero to 6 months. Fear of embodiment and annihilation — “my life force threatens my life.”</p>
-    </div>
-
-    <div class="card">
-      <strong>Main Issues</strong>
-      <p class="muted">Insufficient grounding, fragile attachment, chronic fear of existence, split between thought and sensation.</p>
-    </div>
-
-    <div class="card">
-      <strong>Defenses</strong>
-      <p class="muted">Denial, projection, escape, withdrawal, mental defense, limited contact, avoidance of feeling, freeze, dissociation.</p>
-    </div>
-
-    <div class="card">
-      <strong>Patterns</strong>
-      <p class="muted">Hypervigilance; leaves at first sign of trouble; seeks safety in solitude or nature; over-sensitive to other’s energy; self-harm; rage; anxiety.</p>
-    </div>
-
-    <div class="card">
-      <strong>Blocks to Joy</strong>
-      <p class="muted">Inner critic/self-hatred; weak energetic boundaries; energy shifting upward to head and read as fear; overwhelm and confusion that block joy.</p>
-    </div>
-
-    <div class="card">
-      <strong>Tasks & Real Needs</strong>
-      <p class="muted">Safety and belonging in a chosen tribe; come fully into the body; individuate; integrate life experience.</p>
-    </div>
-
-    <div class="card">
-      <strong>Higher Gifts</strong>
-      <p class="muted">Expanded psychic perception; visionary thinking; powerful creativity when grounded — inventors, artists, musicians.</p>
-    </div>
-
-    <div class="card">
-      <strong>Healing Responses</strong>
-      <p class="muted">Light, agenda-free touch; first connect through rational mind; add playfulness, movement, dance, music, grounding, mind-body therapy and anger work.</p>
-    </div>
-
-    <div class="card">
-      <strong>Path through the 4 D’s to Joy</strong>
-      <ol class="muted">
-        <li>Hara — align intention to remember safety & belonging.</li>
-        <li>Core — embody spiritual aspects in the physical world.</li>
-        <li>Auric — gently dissolve the superego/inner critic; install supportive adult ego.</li>
-        <li>Expansion — return to the creative life pulse (Joy).</li>
-      </ol>
-    </div>
-
-    <div class="card">
-      <blockquote class="muted">“I am safe to create in this body.” — Dojo Bianco Teaching</blockquote>
-    </div>
+    </details>
   </div>
 
   <!-- Login -->
   <div id="login" class="section">
-    <h2>Log in / Sign up</h2>
-    <div class="card">
-      <p class="muted">Client portal (Supabase Auth in production).</p>
-      <a class="btn" href="#dashboard">Enter (demo)</a>
-    </div>
-  </div>
-
-  <!-- Dashboard (demo) -->
-  <div id="dashboard" class="section">
-    <h2>Dashboard</h2>
-    <div class="card">
-      <p class="muted">Welcome back. Next: Module 2 — Boundaries & Breath. Book your next session below.</p>
-      <a class="btn primary" href="#booking">Book a Session</a>
-    </div>
+    <details>
+      <summary><span class="sum-title">Log in / Sign up</span><span class="chev">›</span></summary>
+      <div class="panel">
+        <div class="card">
+          <p class="muted">Client portal (Supabase Auth in production). For now this is a demo.</p>
+          <a class="btn" href="#booking">Book a Session</a>
+        </div>
+      </div>
+    </details>
   </div>
 
   <!-- Booking -->
   <div id="booking" class="section">
-    <h2>Book a Session</h2>
-    <div class="card">
-      <p class="muted">Acuity integration (Zoom auto-links). For now, open your live calendar:</p>
-      <a class="btn primary" target="_blank" href="https://www.cerenakcelikbrunini.com/appointment">Open Booking Page</a>
-    </div>
+    <details>
+      <summary><span class="sum-title">Book a Session</span><span class="chev">›</span></summary>
+      <div class="panel">
+        <div class="card">
+          <p class="muted">Acuity integration (Zoom auto-links). For now, open your live calendar:</p>
+          <a class="btn primary" target="_blank" href="https://www.cerenakcelikbrunini.com/appointment">Open Booking Page</a>
+        </div>
+      </div>
+    </details>
   </div>
 
   <!-- About -->
   <div id="about" class="section">
-    <h2>About Us</h2>
-    <div class="card">
-      <p class="muted"><strong>Dojo Bianco</strong> is a sanctuary for healing and becoming in Tuscany. Our work blends psychology, somatic regulation, and energy awareness — grounded and compassionate.</p>
-      <a class="btn" target="_blank" href="https://www.cerenakcelikbrunini.com">Ceren’s Site</a>
-      <a class="btn" target="_blank" href="https://giuliobrunini.com" style="margin-left:8px;">Giulio’s Site</a>
-    </div>
+    <details>
+      <summary><span class="sum-title">About Dojo Bianco</span><span class="chev">›</span></summary>
+      <div class="panel">
+        <div class="card">
+          <p class="muted"><strong>Dojo Bianco</strong> is a sanctuary for healing and becoming in Tuscany. Our work blends psychology, somatic regulation, and energy awareness — grounded and compassionate.</p>
+          <a class="btn" target="_blank" href="https://www.cerenakcelikbrunini.com">Ceren’s Site</a>
+          <a class="btn" target="_blank" href="https://giuliobrunini.com" style="margin-left:8px;">Giulio’s Site</a>
+        </div>
+      </div>
+    </details>
   </div>
 
   <div class="footer">© Dojo Bianco</div>
