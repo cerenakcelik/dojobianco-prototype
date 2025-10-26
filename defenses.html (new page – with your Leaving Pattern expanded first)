@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Defense Mechanisms — Dojo Bianco</title>
+<link rel="stylesheet" href="style.css" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+<body>
+
+  <div class="nav">
+    <div class="header-bar">
+      <a class="back" href="index.html#learn">← Learn</a>
+    </div>
+  </div>
+
+  <div class="section">
+    <img src="logo.png" alt="Dojo Bianco Logo" class="logo" />
+    <h1>Defense Mechanisms — Meeting Our Protectors with Compassion</h1>
+
+    <div class="card">
+      <p class="muted">All defenses are adaptations of love. Each formed to protect early vulnerability; each seeks joy once safety is restored.</p>
+    </div>
+
+    <div class="card silhouette">
+      <h2>From the Leaving Pattern to Creative Pleasure</h2>
+      <em class="muted">When the first contact with life feels unsafe, the spirit learns to hover near the doorway.</em>
+
+      <div class="card"><b>Wound</b><p class="muted">Shattered attention of the incoming spirit; hostility in-utero to 6 months. Fear of embodiment and annihilation — “my life force threatens my life.”</p></div>
+      <div class="card"><b>Main Issues</b><p class="muted">Insufficient grounding, fragile attachment, chronic fear of existence, split between thought and sensation.</p></div>
+      <div class="card"><b>Defenses</b><p class="muted">Denial, projection, escape, withdrawal, mental defense, limited contact, avoidance of feeling, freeze, dissociation.</p></div>
+      <div class="card"><b>Patterns</b><p class="muted">Hypervigilance; leaves at first sign of trouble; seeks safety in solitude/nature; over-sensitive to others’ energy; self-harm; rage; anxiety.</p></div>
+      <div class="card"><b>Blocks to Joy</b><p class="muted">Inner critic/self-hatred; weak boundaries; energy shifts up to the head (felt as fear); overwhelm and confusion that block joy.</p></div>
+      <div class="card"><b>Tasks & Real Needs</b><p class="muted">Safety & belonging in a chosen tribe; come fully into the body; individuate; integrate life experience.</p></div>
+      <div class="card"><b>Higher Gifts</b><p class="muted">Expanded psychic perception; visionary thinking; powerful creativity when grounded — inventors, artists, musicians.</p></div>
+      <div class="card"><b>Healing Responses</b><p class="muted">Light, agenda-free touch; connect through rational mind first; add play, movement, dance, music, grounding, mind-body therapy, anger work.</p></div>
+      <div class="card"><b>Path through the 4 D’s to Joy</b>
+        <ol class="muted">
+          <li><b>Hara</b> — align intention to remember safety & belonging.</li>
+          <li><b>Core</b> — embody spiritual aspects in the physical world.</li>
+          <li><b>Auric</b> — gently dissolve the superego/inner critic; install supportive adult ego.</li>
+          <li><b>Expansion</b> — return to the creative life pulse (Joy).</li>
+        </ol>
+      </div>
+      <div class="card"><blockquote class="muted">“I am safe to create in this body.” — Dojo Bianco Teaching</blockquote></div>
+    </div>
+
+    <!-- TODO: Add the other four chapters below in the same style -->
+    <!-- Merging → Self-Reliance (Oral) -->
+    <!-- Enduring → Freedom (Masochist) -->
+    <!-- Aggressive → Vulnerability & One’s Goodness (Psychopathic) -->
+    <!-- Appropriate Overachiever → Authenticity & Trust (Rigid) -->
+
+    <div class="cta-row" style="margin-top:18px;">
+      <a class="btn" href="index.html#learn">← Back to Learn</a>
+    </div>
+  </div>
+
+  <div class="section footer">© Dojo Bianco</div>
+</body>
+</html>
