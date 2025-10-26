@@ -12,17 +12,16 @@
   <div class="nav">
     <div class="header-bar">
       <a class="back" href="index.html#learn">← Learn</a>
+      <a href="lesson-chakras.html">← Chakras</a>
     </div>
   </div>
 
   <div class="section">
     <img src="logo.png" alt="Dojo Bianco Logo" class="logo" />
     <h1>Defense Mechanisms — Meeting Our Protectors with Compassion</h1>
+    <p class="muted">All defenses are adaptations of love. Each formed to protect early vulnerability; each seeks joy once safety is restored. As we meet them, we move from survival to embodiment, from defense to creative expression.</p>
 
-    <div class="card">
-      <p class="muted">All defenses are adaptations of love. Each formed to protect early vulnerability; each seeks joy once safety is restored.</p>
-    </div>
-
+    <!-- LEAVING -->
     <div class="card silhouette">
       <h2>From the Leaving Pattern to Creative Pleasure</h2>
       <em class="muted">When the first contact with life feels unsafe, the spirit learns to hover near the doorway.</em>
@@ -31,7 +30,7 @@
       <div class="card"><b>Main Issues</b><p class="muted">Insufficient grounding, fragile attachment, chronic fear of existence, split between thought and sensation.</p></div>
       <div class="card"><b>Defenses</b><p class="muted">Denial, projection, escape, withdrawal, mental defense, limited contact, avoidance of feeling, freeze, dissociation.</p></div>
       <div class="card"><b>Patterns</b><p class="muted">Hypervigilance; leaves at first sign of trouble; seeks safety in solitude/nature; over-sensitive to others’ energy; self-harm; rage; anxiety.</p></div>
-      <div class="card"><b>Blocks to Joy</b><p class="muted">Inner critic/self-hatred; weak boundaries; energy shifts up to the head (felt as fear); overwhelm and confusion that block joy.</p></div>
+      <div class="card"><b>Blocks to Joy</b><p class="muted">Inner critic/self-hatred; weak energetic boundaries; energy shifts up to the head (felt as fear); overwhelm and confusion that block joy.</p></div>
       <div class="card"><b>Tasks & Real Needs</b><p class="muted">Safety & belonging in a chosen tribe; come fully into the body; individuate; integrate life experience.</p></div>
       <div class="card"><b>Higher Gifts</b><p class="muted">Expanded psychic perception; visionary thinking; powerful creativity when grounded — inventors, artists, musicians.</p></div>
       <div class="card"><b>Healing Responses</b><p class="muted">Light, agenda-free touch; connect through rational mind first; add play, movement, dance, music, grounding, mind-body therapy, anger work.</p></div>
@@ -39,22 +38,113 @@
         <ol class="muted">
           <li><b>Hara</b> — align intention to remember safety & belonging.</li>
           <li><b>Core</b> — embody spiritual aspects in the physical world.</li>
-          <li><b>Auric</b> — gently dissolve the superego/inner critic; install supportive adult ego.</li>
+          <li><b>Auric</b> — dissolve the inner critic; install supportive adult ego.</li>
           <li><b>Expansion</b> — return to the creative life pulse (Joy).</li>
         </ol>
       </div>
       <div class="card"><blockquote class="muted">“I am safe to create in this body.” — Dojo Bianco Teaching</blockquote></div>
     </div>
 
-    <!-- TODO: Add the other four chapters below in the same style -->
-    <!-- Merging → Self-Reliance (Oral) -->
-    <!-- Enduring → Freedom (Masochist) -->
-    <!-- Aggressive → Vulnerability & One’s Goodness (Psychopathic) -->
-    <!-- Appropriate Overachiever → Authenticity & Trust (Rigid) -->
+    <!-- MERGING -->
+    <div class="card silhouette">
+      <h2>From the Merging Pattern to Self-Reliance (Oral)</h2>
+      <em class="muted">When nourishment and love are inconsistent, one learns to give to get and to fear one's own needs.</em>
+
+      <div class="card"><b>Wound</b><p class="muted">Not receiving nurturance and love in the stage 6–12 months. The infant learns “I must merge to survive.”</p></div>
+      <div class="card"><b>Main Issues</b><p class="muted">Can't feel fullness, leaks energy, feels empty or needy, fears deprivation.</p></div>
+      <div class="card"><b>Defenses</b><p class="muted">Blocks needs to receive; gives to get; collapse; looks to others to fill; unable to metabolize own energy.</p></div>
+      <div class="card"><b>Patterns</b><p class="muted">Clingy, self-sacrificing, exhausted, fears rejection; lives in “never enough.”</p></div>
+      <div class="card"><b>Blocks to Joy</b><p class="muted">Fear of abandonment; belief “I am not enough”; core shame; helplessness.</p></div>
+      <div class="card"><b>Tasks & Real Needs</b><p class="muted">To feel fullness and care for oneself; experience divine support; take responsibility to nurture self.</p></div>
+      <div class="card"><b>Higher Gifts</b><p class="muted">Heart-centered nurturers; compassionate givers; natural communicators and healers.</p></div>
+      <div class="card"><b>Healing Responses</b><p class="muted">Stand on your own two feet; ground; affirm “Mother Earth loves and nourishes me.” Use statements like “I can, I am enough, there is enough.” Practice filling from within.</p></div>
+      <div class="card"><b>Path through the 4 D’s to Joy</b>
+        <ol class="muted">
+          <li><b>Hara</b> — intend self-responsibility and self-nourishment.</li>
+          <li><b>Core</b> — fill from the divine within; trust your vitality.</li>
+          <li><b>Auric</b> — receive from others as an adult, not a child.</li>
+          <li><b>Expansion</b> — pleasure of giving and receiving in balance.</li>
+        </ol>
+      </div>
+      <div class="card"><blockquote class="muted">“I am filled by life itself.” — Dojo Bianco Teaching</blockquote></div>
+    </div>
+
+    <!-- ENDURING -->
+    <div class="card silhouette">
+      <h2>From the Enduring Pattern to Freedom (Masochist)</h2>
+      <em class="muted">When love and control are mixed, one learns to endure and hold back their own expression.</em>
+
+      <div class="card"><b>Wound</b><p class="muted">Over-controlled, dominated, invaded, or humiliated (1½–3 years old).</p></div>
+      <div class="card"><b>Main Issues</b><p class="muted">Fear of self-expression; chronic holding; self-sabotage; over-responsibility.</p></div>
+      <div class="card"><b>Defenses</b><p class="muted">Hiding, resistance, turning will against self, passive aggression, suffering to spite others.</p></div>
+      <div class="card"><b>Patterns</b><p class="muted">Overburdened, “I have to hold it all,” guilt, resentment, blocked spontaneity.</p></div>
+      <div class="card"><b>Blocks to Joy</b><p class="muted">Belief “life is hard and I must endure”; distrust of help; chronic tension and fatigue.</p></div>
+      <div class="card"><b>Tasks & Real Needs</b><p class="muted">To claim boundary and will; to express freely without fear of punishment; to trust ease.</p></div>
+      <div class="card"><b>Higher Gifts</b><p class="muted">Steady, patient, reliable; powerful holders of space; loyal and enduring leaders.</p></div>
+      <div class="card"><b>Healing Responses</b><p class="muted">Movement and breathwork; safe expression of anger; reclaim pleasure; affirm “I deserve ease.”</p></div>
+      <div class="card"><b>Path through the 4 D’s to Joy</b>
+        <ol class="muted">
+          <li><b>Hara</b> — intend to claim your free expression.</li>
+          <li><b>Core</b> — trust your will as divine will.</li>
+          <li><b>Auric</b> — move energy through muscles; release held charge.</li>
+          <li><b>Expansion</b> — freedom and play replace tension and guilt.</li>
+        </ol>
+      </div>
+      <div class="card"><blockquote class="muted">“I allow life to move freely through me.” — Dojo Bianco Teaching</blockquote></div>
+    </div>
+
+    <!-- AGGRESSIVE -->
+    <div class="card silhouette">
+      <h2>From the Aggressive Pattern to Vulnerability & One’s Own Goodness (Psychopathic)</h2>
+      <em class="muted">When betrayal or humiliation replace trust, the child learns to control rather than depend.</em>
+
+      <div class="card"><b>Wound</b><p class="muted">Betrayal and humiliation — when caregivers misuse trust or force the child’s will.</p></div>
+      <div class="card"><b>Main Issues</b><p class="muted">Distrust of others; fear of vulnerability; rejection of needs; over-control.</p></div>
+      <div class="card"><b>Defenses</b><p class="muted">Domination, manipulation, perfectionism, competitiveness, over-achievement.</p></div>
+      <div class="card"><b>Patterns</b><p class="muted">Controlling, angry, demanding, powering over; seeks invincibility; avoids surrender.</p></div>
+      <div class="card"><b>Blocks to Joy</b><p class="muted">Belief “I must be invincible”; separation from trust and softness; identification with “warrior” over “human.”</p></div>
+      <div class="card"><b>Tasks & Real Needs</b><p class="muted">Unify polarities of power and love; allow help; relax into support; feel safe to yield.</p></div>
+      <div class="card"><b>Higher Gifts</b><p class="muted">Courageous leaders; powerful manifestors; magnetic presence; deep sense of honor.</p></div>
+      <div class="card"><b>Healing Responses</b><p class="muted">Ground into Earth; trust your Core; open heart while staying embodied; invite humility as strength.</p></div>
+      <div class="card"><b>Path through the 4 D’s to Joy</b>
+        <ol class="muted">
+          <li><b>Hara</b> — intend unity of personal and divine will.</li>
+          <li><b>Core</b> — soften defenses; allow true power to include care.</li>
+          <li><b>Auric</b> — fill lower chakras with safety; allow heart vulnerability.</li>
+          <li><b>Expansion</b> — leadership through authenticity, not control.</li>
+        </ol>
+      </div>
+      <div class="card"><blockquote class="muted">“My power is safe when guided by love.” — Dojo Bianco Teaching</blockquote></div>
+    </div>
+
+    <!-- RIGID -->
+    <div class="card silhouette">
+      <h2>From the Appropriate Overachiever Pattern to Authenticity & Trusting Self (Rigid)</h2>
+      <em class="muted">When feelings are judged and only perfection earns love, authenticity is replaced by performance.</em>
+
+      <div class="card"><b>Wound</b><p class="muted">Taught to ignore or mistrust inner experience; must conform to outer rules to be loved.</p></div>
+      <div class="card"><b>Main Issues</b><p class="muted">Self-worth tied to performance; fear of imperfection; difficulty feeling emotions.</p></div>
+      <div class="card"><b>Defenses</b><p class="muted">Control, self-criticism, blaming, rigidity, moral superiority, chronic doing.</p></div>
+      <div class="card"><b>Patterns</b><p class="muted">Inner critic rules; anxiety; restlessness; overworking; suppression of pleasure.</p></div>
+      <div class="card"><b>Blocks to Joy</b><p class="muted">Belief “I must be right”; fear of pleasure; replacing relational boundary with energetic wall.</p></div>
+      <div class="card"><b>Tasks & Real Needs</b><p class="muted">Value feelings as truth; embrace imperfection; surrender into pleasure and play.</p></div>
+      <div class="card"><b>Higher Gifts</b><p class="muted">Masters of order and form; disciplined artists, dancers, writers, and organizers who bring beauty through structure.</p></div>
+      <div class="card"><b>Healing Responses</b><p class="muted">Relax rigid muscles; allow silliness and spontaneity; practice receiving pleasure without guilt.</p></div>
+      <div class="card"><b>Path through the 4 D’s to Joy</b>
+        <ol class="muted">
+          <li><b>Hara</b> — intend connection to Core Essence over performance.</li>
+          <li><b>Core</b> — breathe into feeling; let imperfection reveal beauty.</li>
+          <li><b>Auric</b> — relax structured levels; open to authentic contact.</li>
+          <li><b>Expansion</b> — freedom through joy and creative play.</li>
+        </ol>
+      </div>
+      <div class="card"><blockquote class="muted">“Authenticity is my true perfection.” — Dojo Bianco Teaching</blockquote></div>
+    </div>
 
     <div class="cta-row" style="margin-top:18px;">
       <a class="btn" href="index.html#learn">← Back to Learn</a>
     </div>
+
   </div>
 
   <div class="section footer">© Dojo Bianco</div>
